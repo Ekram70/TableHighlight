@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  color: white;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.table {
+  width: 930px;
+  height: 400px;
+  border-collapse: collapse;
+  background-image: linear-gradient(-45deg, #a630e6, #4900ff);
+  overflow: hidden;
+  text-transform: capitalize;
+}
+
+.table-head {
+  background-image: linear-gradient(to right, #8252fc, #b16ef1);
+}
+
+.table-data {
+  padding: 15px;
+  font-weight: 500;
+  line-height: 1.4px;
+}
+
+.table-head-data {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.table-row:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.table-col-hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
