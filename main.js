@@ -4,6 +4,8 @@ let table = document.querySelector("tbody");
 let tbodyCells = document.querySelectorAll(".table-data:not(.table-head-data)");
 // rowLength is to calculate how many rows my table have.
 let rowLength = document.querySelectorAll(".table-row").length;
+// colLength is to calculate how many columns my table have.
+let colLength = document.querySelector("tbody").rows[0].cells.length;
 // variable for cellIndex Number (column Number)
 let colNumber;
 
@@ -27,7 +29,7 @@ for (let count = 0; count < tbodyCells.length; count++) {
 
     // adding color to expected column
     for (let x = 0; x < rowLength - 1; x++) {
-      tbodyCells[x * 7 + colNumber].classList.add("table-col-hover");
+      tbodyCells[x * colLength + colNumber].classList.add("table-col-hover");
     }
   });
 }
