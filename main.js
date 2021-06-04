@@ -1,5 +1,5 @@
 //selecting the whole table
-let table = document.querySelector(".table");
+let table = document.querySelector("tbody");
 // tbodyCells is for all cells without the th
 let tbodyCells = document.querySelectorAll(".table-data:not(.table-head-data)");
 // rowLength is to calculate how many rows my table have.
